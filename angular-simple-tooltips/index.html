@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>angular-tooltips</title>
+    <link rel="stylesheet" href="css/tooltips.css">
 
     <script src="lib/angular/angular.min.js"></script>
-    <link rel="stylesheet" href="css/tooltips.css">
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/jquery/jquery-2.0.3.min.js"></script>
+    <script src="lib/jquery/jquery.js"></script>
+
     <script src="js/tooltips.js"></script>
     <script src="js/directive.js"></script>
 
 </head>
-<body>
+
 
 <body ng-app="myApp">
 <div ng-controller="TooltipsDemoCtrl">
@@ -28,9 +32,8 @@
             </div>
         </div>
     </div>
-
 </div>
-<div style="float:right;">
+<div style="margin-left: 300px">
     <div class="wi-view-row-tips" ng-mouseenter="moveshowleft()" ng-mouseleave="leavehideleft()">
         <div ng-show="lefttipIsOpen" class="co-leftTooltips">
             <div class="wi-tooltip-leftarrow">
@@ -44,7 +47,11 @@
         </div>
     </div>
 </div>
+    <div style="margin-left: 300px">
+        <div class="wi-view-row-tips" yls-tooltips direction="left">
 
+        </div>
+    </div>
 
 
 
