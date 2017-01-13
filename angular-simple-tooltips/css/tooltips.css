@@ -1,0 +1,112 @@
+.wi-view-row-tips {
+    position: relative;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-top: 12px;
+    background-color: lightgrey;
+    margin-left: 5px;
+    cursor: pointer;
+    background: url("../img/tip4.png") no-repeat center center;
+}
+.co-tooltips {
+    position: absolute;
+    float: left;
+    top: -5px;
+    left: 20px;
+    width: 170px;
+    /*max-width: 150px;*/
+    height: auto;
+}
+.wi-tooltip-arrow {
+    float: left;
+    /*background-color: #fff;*/
+    width: 0;
+    height: 0;
+    border-width: 8px 8px 8px 0;
+    border-style: solid;
+    border-color: transparent #ff6060 transparent transparent; /*透明 灰 透明 透明 */
+    margin: 5px auto;
+    position: relative;
+}
+.wi-tooltip-arrow span {
+    display: block;
+    float: left;
+    width: 0;
+    height: 0;
+    border-width: 6px 6px 6px 0;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent; /*透明 黄 透明 透明 */
+    position: absolute;
+    top: -6px;
+    right: -8px;
+    z-index: 999;
+}
+
+.wi-tooltip-main-norm {
+    position: absolute;
+    left: 7px;
+    float: left;
+    max-width: 150px;
+    background-color: #fff;
+    line-height: 30px;
+    word-wrap: break-word;
+    border: 1px solid #ff6060;
+    border-radius: 5px;
+}
+
+.wi-tooltip-main-norm p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.wi-tooltip-leftarrow {
+    float: right;
+    width: 0;
+    height: 0;
+    border-width: 8px 0 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ff6060; /*透明 透明 透明 灰*/
+    margin: 8px auto;
+    position: relative;
+    z-index: 2;
+}
+
+.wi-tooltip-leftarrow span {
+    display: block;
+    width: 0;
+    height: 0;
+    border-width: 6px 0 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff; /*透明 透明 透明 黄*/
+    position: absolute;
+    top: -6px;
+    left: -8px;
+    z-index: 1001;
+}
+
+/* 正常左边信息提示框css */
+.co-leftTooltips {
+    position: absolute;
+    float: right;
+    top: -8px;
+    right: 20px;
+    min-width: 170px;
+    z-index: 1000;
+}
+.wi-tooltip-main-left {
+    position: absolute;
+    right: 7px;
+    float: right;
+    background-color: #fff;
+    line-height: 30px;
+    word-wrap: break-word;
+    border: 1px solid #ff6060;
+    border-radius: 5px;
+}
+
+.wi-tooltip-main-left p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+

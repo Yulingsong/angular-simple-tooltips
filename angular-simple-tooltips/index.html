@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>angular-tooltips</title>
+
+    <script src="lib/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="css/tooltips.css">
+    <script src="js/tooltips.js"></script>
+    <script src="js/directive.js"></script>
+
+</head>
+<body>
+
+<body ng-app="myApp">
+<div ng-controller="TooltipsDemoCtrl">
+<div style="float:left;">
+    <div class="wi-view-row-tips" ng-mouseenter="moveshow()" ng-mouseleave="leavehide()">
+        <div ng-show="tipIsOpen" class="co-tooltips">
+            <div class="wi-tooltip-arrow">
+                <span></span>
+            </div>
+            <div class="wi-tooltip-main-norm">
+                <p>
+                    请填写协议书上资管计划编号132313213
+                    请填写协议书上资管计划编号132313213
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div style="float:right;">
+    <div class="wi-view-row-tips" ng-mouseenter="moveshowleft()" ng-mouseleave="leavehideleft()">
+        <div ng-show="lefttipIsOpen" class="co-leftTooltips">
+            <div class="wi-tooltip-leftarrow">
+                <span></span>
+            </div>
+            <div class="wi-tooltip-main-left">
+                <p>
+                    请填写协议书上资管计划编号请填写协议书上资管计划编号
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
